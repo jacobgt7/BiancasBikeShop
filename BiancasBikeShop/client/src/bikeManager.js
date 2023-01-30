@@ -11,5 +11,6 @@ export const getBikeById = (id) => {
 }
 
 export const getBikesInShopCount = () => {
-    //add implementation here... 
+    return fetch(`${apiUrl}/getCount`)
+        .then(res => res.json())
 }
