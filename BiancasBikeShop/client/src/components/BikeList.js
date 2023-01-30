@@ -18,7 +18,7 @@ export default function BikeList({ setDetailsBikeId }) {
     return (
         <>
             <h2>Bikes</h2>
-            {bikes.map(bike => <BikeCard key={bike.id} bike={bike} />)}
+            {bikes.map(bike => <BikeCard key={bike.id} bike={bike} setDetailsBikeId={setDetailsBikeId} />)}
         </>
     )
 }
